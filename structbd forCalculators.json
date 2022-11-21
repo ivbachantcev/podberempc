@@ -1,0 +1,32 @@
+{
+"standart": {
+    "Frame": "Cougar MX330-F черный",
+    "Memory": "12 ТБ Жесткий диск Seagate Exos X16",
+    "Motherboard": "GIGABYTE B550 AORUS ELITE V2",
+    "Processor": "AMD Ryzen 9 5950X BOX",
+    "RAM": "Kingston FURY Renegade RGB [KF436C18RBAK4/128] 128 ГБ",
+    "cooling": "PCCOOLER GI-H58UB CORONA B [GI-H58UB CORONA R]",
+    "powerUnit": "Corsair HX1200 [CP-9020140-EU]",
+    "videoCard": "MSI GeForce RTX 3090 Ti SUPRIM X"
+    },
+    "beginner":{
+        "Frame": "AeroCool Cylon черный",
+        "Memory": "8 ТБ Жесткий диск Seagate SkyHawk",
+        "Motherboard": "MSI MPG B550 GAMING PLUS",
+        "Processor": "AMD Ryzen 7 5800X OEM",
+        "RAM": "A-Data XPG GAMMIX D20 [AX4U320032G16A-DCBK20] 64 ГБ",
+        "cooling": "ID-COOLING SE-226-XT Black",
+        "powerUnit": "DEEPCOOL DQ750 [DQ750-M-V2L]",
+        "videoCard": "Palit GeForce RTX 3070 JetStream OC (LHR)"
+    },
+    "professional": {
+        "Frame": "Corsair Crystal Series 680X RGB [CC-9011168-WW] черный",
+        "Memory": "20 ТБ Жесткий диск WD Gold [WD201KRYZ]",
+        "Motherboard": "ASUS ROG ZENITH II EXTREME ALPHA",
+        "Processor": "AMD Ryzen Threadripper 3990X BOX",
+        "RAM": "G.Skill TRIDENT Z Neo RGB [F4-3200C16Q-128GTZN] 128 ГБ (2шт)",
+        "cooling": "MSI MEG CORE LIQUID S360",
+        "powerUnit": "be quiet! DARK POWER PRO 12 1500W [BN312]",
+        "videoCard": "PNY Quadro RTX 6000 [VCQRTX6000-PB]"
+    }
+}

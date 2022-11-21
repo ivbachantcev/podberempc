@@ -1,0 +1,32 @@
+{
+"standart": {
+    "Frame": "DEEPCOOL MATREXX 55 MESH ADD-RGB 4F",
+    "Memory": "2000 ГБ SSD M.2 накопитель Samsung 980 PRO",
+    "Motherboard": "GIGABYTE Z690 AORUS ELITE DDR4",
+    "Processor": "Intel Core i7-12700KF OEM",
+    "RAM": "A-Data XPG SPECTRIX D41 RGB [AX4U32008G16A-DT41] 16 ГБ",
+    "cooling": "AeroCool Rime 4 Dual ARGB",
+    "powerUnit": "Corsair HX1000 [CP-9020139-EU]",
+    "videoCard": "MSI GeForce RTX 3080 Ti VENTUS 3X OC"
+    },
+    "beginner":{
+        "Frame": "AeroCool Streak [ACCM-PV19012.11] черный",
+        "Memory": "1ТБ Seagate BarraCuda",
+        "Motherboard": "ASUS PRIME B550-PLUS",
+        "Processor": "AMD Ryzen 5 5500 BOX",
+        "RAM": "AMD Radeon R7 Performance Series [R7S416G2606U2K] 16 ГБ",
+        "cooling": "AeroCool Verkho Plus",
+        "powerUnit": "DEEPCOOL PF450 [R-PF450D-HA0B-EU]",
+        "videoCard": "MSI GeForce GTX 1660 SUPER Gaming [GTX 1660 SUPER GAMING]"
+    },
+    "professional": {
+        "Frame": "Corsair iCUE 5000T RGB [CC-9011231-WW] белый",
+        "Memory": "4000 ГБ SSD M.2 накопитель Kingston FURY Renegade",
+        "Motherboard": "ASUS ROG MAXIMUS Z690 FORMULA",
+        "Processor": "Intel Core i9-12900K BOX",
+        "RAM": "G.Skill Trident Z5 RGB [F5-6000J3238F16GX2-TZ5RS] 32 ГБ",
+        "cooling": "LIAN LI Galahad AIO UNI FAN SL Edition 360",
+        "powerUnit": "be quiet! DARK POWER PRO 12 1500W [BN312]",
+        "videoCard": "MSI GeForce RTX 3090 Ti SUPRIM X [RTX 3090 Ti SUPRIM X 24G]"
+    }
+}

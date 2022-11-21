@@ -1,0 +1,32 @@
+{
+"standart": {
+    "Frame": "AeroCool CS-1101 черный",
+    "Memory": "2000 ГБ 2.5 SATA накопитель Patriot Memory P210 [P210S2TB25]",
+    "Motherboard": "ASUS ROG Crosshair VIII Dark Hero",
+    "Processor": "AMD Ryzen 5 5500 OEM",
+    "RAM": "Kingston FURY Beast Black RGB [KF432C16BBAK4/32] 32 ГБ",
+    "cooling": "PCCOOLER GI-X5B [CLPCC_X5]",
+    "powerUnit": "be quiet! DARK POWER PRO 12 1500W [BN312]",
+    "videoCard": "GIGABYTE GeForce RTX 3090 TI GAMING [GV-N309TGAMING-24GD] (3шт)"
+    },
+    "beginner":{
+        "Frame": "AeroCool CS-1101 черный",
+        "Memory": "1 ТБ Seagate BarraCuda [ST1000DM010]",
+        "Motherboard": "GIGABYTE B560 HD3",
+        "Processor": "Intel Core i3-10100F OEM",
+        "RAM": "AMD Radeon R9 Gamer Series 16 ГБ",
+        "cooling": "DEEPCOOL GAMMAXX 300 FURY",
+        "powerUnit": "Cougar BXM 700W [CGR BXM-700]",
+        "videoCard": "Palit GeForce RTX 3070 Ti GamingPro"
+    },
+    "professional": {
+        "Frame": "LIAN LI PC-O11 Dynamic XL ROG Certify [G99.O11DXL-W.00]",
+        "Memory": "4000 ГБ SSD M.2 накопитель Kingston FURY Renegade [SFYRD/4000G]",
+        "Motherboard": "ASRock X299 CREATOR",
+        "Processor": "Intel Core i9-10920X BOX",
+        "RAM": "Kingston FURY Renegade RGB [KF432C16RBAK8/256] 256 ГБ",
+        "cooling": "MSI MEG CORE LIQUID S360",
+        "powerUnit": "be quiet! DARK POWER PRO 12 1500W [BN312]",
+        "videoCard": "PNY Quadro RTX 6000 [VCQRTX6000-PB] (3шт)"
+    }
+}

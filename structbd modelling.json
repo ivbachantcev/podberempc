@@ -1,0 +1,32 @@
+{
+"standart": {
+    "Frame": "ZALMAN i3 Edge черный",
+    "Memory": "10 ТБ Seagate IronWolf [ST10000VN000]",
+    "Motherboard": "MSI MAG X570S TOMAHAWK MAX WIFI",
+    "Processor": "AMD Ryzen 7 5800X BOX",
+    "RAM": "G.Skill TRIDENT Z [F4-3200C16Q-64GTZSW] 64 ГБ",
+    "cooling": "PCCOOLER GI-H58UB CORONA B [GI-H58UB CORONA R]",
+    "powerUnit": "DEEPCOOL DQ850 [DQ-850-M-V2L]",
+    "videoCard": "GIGABYTE GeForce RTX 3090 TI GAMING [GV-N309TGAMING-24GD]"
+    },
+    "beginner":{
+        "Frame": "AeroCool Delta-A [ACCM-PV45012.11] черный",
+        "Memory": "1ТБ Seagate BarraCuda",
+        "Motherboard": "GIGABYTE B550 AORUS PRO AC",
+        "Processor": "AMD Ryzen 5 5600X OEM",
+        "RAM": "A-Data XPG Spectrix D60G RGB",
+        "cooling": "DEEPCOOL GAMMAXX 300 R",
+        "powerUnit": "DEEPCOOL DQ750 [DQ750-M-V2L]",
+        "videoCard": "GIGABYTE GeForce RTX 3060 Ti GAMING OC"
+    },
+    "professional": {
+        "Frame": "Corsair iCUE 5000T RGB [CC-9011231-WW]",
+        "Memory": "20 ТБ Жесткий диск WD Gold [WD201KRYZ]",
+        "Motherboard": "ASUS ROG CROSSHAIR VIII EXTREME",
+        "Processor": "AMD Ryzen 9 5950X BOX",
+        "RAM": "G.Skill TRIDENT Z Neo RGB 128 ГБ",
+        "cooling": "MSI MEG CORE LIQUID S360",
+        "powerUnit": "be quiet! DARK POWER PRO 12 1500W [BN312]",
+        "videoCard": "PNY Quadro RTX 6000 [VCQRTX6000-PB]"
+    }
+}

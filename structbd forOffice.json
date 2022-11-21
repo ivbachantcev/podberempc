@@ -1,0 +1,32 @@
+{
+"standart": {
+    "Frame": " ZET GAMING Rare L2 WG белый",
+    "Memory": "2000 ГБ SSD M.2 накопитель Kingston NV1 [SNVS/2000G]",
+    "Motherboard": "GIGABYTE B450 AORUS ELITE",
+    "Processor": "AMD Ryzen 7 3700X OEM",
+    "RAM": "A-Data XPG SPECTRIX D50 RGB [AX4U32008G16A-DW50] 16 ГБ",
+    "cooling": " AeroCool Cylon 4 [ACTC-CL30410.01]",
+    "powerUnit": "Cooler Master MWE 650 WHITE - V2 [MPE-6501-ACABW-EU]",
+    "videoCard": "Palit GeForce RTX 3070 JetStream OC (LHR) [NE63070T19P2-1040J]"
+    },
+    "beginner":{
+        "Frame": "AeroCool Delta-A [ACCM-PV45012.11]",
+        "Memory": "1 ТБ Seagate BarraCuda [ST1000DM010]",
+        "Motherboard": "ASUS PRIME B450-PLUS",
+        "Processor": "AMD Ryzen 5 PRO 4650G OEM",
+        "RAM": "AMD Radeon R7 Performance Series [R7416G2133U2S-U] 16 ГБ",
+        "cooling": " AeroCool Air Frost 2 [ACTC-AF20217.01]",
+        "powerUnit": "DEEPCOOL PF450 [R-PF450D-HA0B-EU]",
+        "videoCard": "Palit GeForce GTX 1660 SUPER Gaming Pro [NE6166S018J9-1160A-1]"
+    },
+    "professional": {
+        "Frame": "Corsair iCUE 4000X RGB [CC-9011204-WW] черный",
+        "Memory": "2000 ГБ SSD M.2 накопитель A-Data XPG Spectrix S40G RGB",
+        "Motherboard": "GIGABYTE X570 AORUS XTREME",
+        "Processor": "AMD Ryzen 9 5950X BOX",
+        "RAM": "G.Skill Trident Z Royal [F4-3200C14Q-32GTRS] 32 ГБ",
+        "cooling": "NZXT Kraken Z53 RGB",
+        "powerUnit": "Cougar POLAR 1200 [31PL120001P01]",
+        "videoCard": "GIGABYTE AORUS GeForce RTX 3080 Ti XTREME WATERFORCE"
+    }
+}

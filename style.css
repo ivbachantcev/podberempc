@@ -1,0 +1,237 @@
+body {
+    background-image: url(bg1.gif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.container {
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    width: 80%;
+    background-color: rgba(65, 79, 204, 0.582);
+    display: flex;
+    flex-flow: column;
+    /* border-radius: 30px; */
+    padding: 1%;
+}
+.category {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 5%; 
+    /* background-color: rgb(62, 226, 199); */
+    /* width: 50%; */
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+.level {
+    /* width: 50%; */
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 5%; 
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+
+    /* background-color: rgb(62, 226, 199); */
+}
+#viewResults {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    background-color: aqua;
+    /* margin: 0 5%;*/
+    /* width: 90%;  */
+    /* margin-right: 5%; */
+    background-color: rgba(16, 19, 17, 0.411);
+    
+}
+.config {
+    margin-left: 10px;
+    margin-right: 5%;
+    /* width: 50%; */
+    display: flex;
+    background-color: rgb(62, 226, 199);
+    
+}
+.imageDetail {
+    display:block;
+    margin: 10px auto;
+    max-width: 60%;
+    /* height: 30%; */
+}
+.detail {
+    min-width: 20%;
+    max-width: 20%;
+    margin: 10px;
+    /* background-color: rgb(202, 9, 106); */
+    /* align-self: flex-start; */
+    /* flex-shrink: 0; */
+    /* display: flex;
+    flex-direction: column;*/
+} 
+.nameDetail {
+    display:block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.modelDetail {
+    text-align: center;
+    display:block;
+    margin: 10px auto;
+}
+
+.detail-button {
+    width: 100%;
+    height: 100%;
+    /* font-size: 45px; */
+}
+.setConfig {
+    /* display: flex;
+    flex-wrap: nowrap; */
+    /* justify-content: space-between; */
+    width: 100%;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+#giveBuilding {
+    width: 100%;
+    height: 100%;
+}
+.title {
+    text-align: center;
+}
+
+.videoContainer {
+    vertical-align: middle;
+    width: 70%;
+}
+
+.videoContent {
+    width: 100%;
+    height: 400px;
+    margin-right: 10px;
+    /* display: block; */
+    /* margin: 0 auto; */
+}
+table {
+    width: 100%;
+    background-color: rgba(16, 19, 17, 0.411);
+}
+.title {
+    display: flex;
+    padding: 10px;
+    width: 80%;
+    max-width: 1320px;
+    margin: 1% auto;
+    background-color: rgba(65, 79, 204, 0.582);
+    align-items: center;
+}
+
+.title h1 {
+    color: rgb(207, 195, 180);
+    flex-grow: 1;
+    font-size: 4em;
+}
+
+#selectCategory {
+    height: 80px;
+    font-size: 30px;
+}
+
+#selectLevel {
+    height: 80px;
+    font-size: 30px;
+
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100vh;
+
+}
+.logo {
+    width: 10%;
+}
+
+.Frame {
+    background-color: rgb(25, 128, 47);
+}
+.Memory {
+    background-color: rgb(71, 224, 110);
+    color: #000000;
+}
+.Motherboard {
+    background-color: rgb(153, 224, 71);
+    color: #000000;
+}
+.Processor {
+    background-color: rgb(71, 175, 224);
+    color: #000000;
+}
+.RAM {
+    background-color: rgb(142, 71, 224);
+}
+.cooling {
+    background-color: rgb(224, 71, 135);
+    color: #000000;
+}
+.powerUnit {
+    background-color: rgb(233, 144, 42);
+    color: #000000;
+}
+.videoCard  {
+    background-color: rgb(199, 62, 62);
+}
+.modal-content {
+    color: black;
+    /* background-color: rgb(199, 62, 62); */
+    color: #000000;
+    border: 1px solid black;
+}
+.btn {
+    border-radius: 0;
+}
+#viewResults .btn-primary {
+        --bs-btn-border-color: #00000000;
+        --bs-btn-hover-bg: #07080800; 
+        --bs-btn-hover-border-color: #000000;
+}
+.footer {
+    width: 80%;
+    max-width: 1320px;
+    margin: 1% auto;
+    background-color: rgba(65, 79, 204, 0.582);
+}
+
+.modal-dialog {
+    /* max-width: 40%; */
+}
+
+.modal-header {
+    border-bottom: 1px solid #000000;
+}
+
+tr {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.config .btn {
+    background-color: rgb(62, 226, 199);
+    color: black;
+    --bs-btn-border-color: #00000000;
+    --bs-btn-hover-bg: #07080800; 
+    --bs-btn-hover-border-color: #000000;
+    font-size: 1.75rem;
+}
+.setConfig h3 {
+    color: rgb(207, 195, 180);
+}
+
+.form-select {
+    background-color: rgb(62, 226, 199);
+    border-radius: 0;
+}

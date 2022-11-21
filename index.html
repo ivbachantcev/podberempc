@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="style.css">
+  <title>Проект Артёма
+  </title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="title">
+      <img src="лого1.png" alt="" class="logo">
+      <h1>
+        Подберём компьютер.ru
+      </h1>
+    </div>
+    <div class="container">
+      <!-- <div class="setConfig">
+        <div class="category" >
+          <h3>Выберите категорию</h3>
+          <select id="selectCategory" class="form-select" aria-label="Default select example">
+          </select>
+        </div>
+        <div class="level">
+          <h3>Выберите уровень</h3>
+          <select id="selectLevel" class="form-select" aria-label="Default select example">
+          </select>
+        </div>
+        <div class="config">
+          <input type="button" class="btn btn-primary" value="Сгенерировать" id="giveBuilding">
+        </div>
+      </div> -->
+      <div class="setConfig">
+        <table>
+          <tr>
+            <td class="category">
+              <h3>Выберите категорию</h3>
+              <select id="selectCategory" class="form-select" aria-label="Default select example">
+              </select>
+            </td>
+            <td rowspan="3" class="videoContainer">
+              <div style="margin-right: 10px;margin-top: 10px;">
+                <iframe  class="videoContent" src="https://www.youtube.com/embed/MpfGVaSJwCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="level">
+              <h3>Выберите уровень</h3>
+              <select id="selectLevel" class="form-select" aria-label="Default select example">
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="config" height="100">
+              <input type="button" class="btn btn-primary" value="Сгенерировать" id="giveBuilding">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- <div class="videoContainer">
+        <iframe  class="videoContent" src="https://www.youtube.com/embed/MpfGVaSJwCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div> -->
+      <div id="viewResults">
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        информация о создателях
+      </p>
+    </div>
+  </div>
+</body>
+<script src="storage.js"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  // import {detailsPC} from "./storage.js"
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+  import { getStorage, getDownloadURL, ref, listAll } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js";
+  import { getDatabase, ref as refDB, onValue, get } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // функция заполнения списков
+
+  // Your web app's Firebase configuration4444
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  
+  // первая загрузка
+  // подключаем хранилище
+  const storage = getStorage();
+  const storageRef = ref(storage);
+  // подключаем бд
+  const database = getDatabase();
+  
+  var configResult = document.getElementById("viewResults");
+  var butttonChoice = document.getElementById("giveBuilding");
+  butttonChoice.onclick = function (){
+    // узнаем категорию
+    var categorySelect = document.getElementById("selectCategory");
+    var category = categorySelect.value;
+    // узнаем уровень
+    var levelSelect = document.getElementById("selectLevel");
+    var level = levelSelect.value;
+    
+    document.getElementById('viewResults').innerHTML = "";
+    for (const key in detailsPC){
+      // загружаем изображения
+      const starsRef = ref(storage, category+'/'+level+'/'+key+'.jpg');
+      getDownloadURL(starsRef)
+      .then((url) => {
+        // контейнер для комплектующего
+        var container = document.createElement('div');
+        container.className = key + " detail";
+        // кнопка для вызова окна
+        var buttonC = document.createElement('button');
+        buttonC.type = "button";
+        buttonC.className = "btn btn-primary detail-button " + key;
+        buttonC.setAttribute('data-bs-toggle', "modal");
+        buttonC.setAttribute('data-bs-target', "#staticBackdrop"+key);
+        buttonC.textContent = detailsPC[key];
+        // модальное окно
+        var modalFade = document.createElement('div');
+        modalFade.className = "modal fade";
+        modalFade.id = "staticBackdrop"+key;
+        modalFade.setAttribute('data-bs-backdrop', "static");
+        modalFade.setAttribute('data-bs-keyboard', false);
+        modalFade.setAttribute('tabindex', -1);
+        modalFade.setAttribute('aria-labelledby', "staticBackdropLabel");
+        modalFade.setAttribute('aria-hidden', true);
+
+        var modalDialog = document.createElement('div');
+        modalDialog.className = 'modal-dialog';
+
+        var modalContent = document.createElement('div');
+        modalContent.className = "modal-content " + key;
+
+        var modalHeader = document.createElement('div');
+        modalHeader.className = 'modal-header';
+
+        var modalTitle = document.createElement('h1');
+        modalTitle.className = 'modal-title fs-5';
+        modalTitle.id = "staticBackdrop"+key;
+        modalTitle.textContent = detailsPC[key];
+
+        var buttonCLose = document.createElement('button');
+        buttonCLose.type = 'button';
+        buttonCLose.className = 'btn-close';
+        buttonCLose.setAttribute('data-bs-dismiss',"modal");
+        buttonCLose.setAttribute('aria-label',"Close");
+
+        var modelDetail = document.createElement('p');
+        modelDetail.className = "modelDetail";
+        // загрузка информации
+        const databaseRef = refDB(database, category+'/'+level+'/'+key);
+        onValue(databaseRef, (snapshot) => {
+          const data = snapshot.val();
+          modelDetail.textContent = data;
+        });
+
+        var modalBody = document.createElement('div');
+        modalBody.className = 'modal-body';
+        
+        // изображение 
+        var image = document.createElement('img');
+        image.src = url;
+        image.className = "imageDetail";
+
+        container.insertAdjacentElement('beforeend', buttonC);
+        modalBody.insertAdjacentElement('beforeend', image);
+        modalBody.insertAdjacentElement('beforeend', modelDetail);
+        modalHeader.insertAdjacentElement('beforeend', modalTitle);
+        modalHeader.insertAdjacentElement('beforeend', buttonCLose);
+        
+        modalContent.insertAdjacentElement('beforeend', modalHeader);
+        modalContent.insertAdjacentElement('beforeend', modalBody);
+        
+        modalDialog.insertAdjacentElement('beforeend', modalContent);
+        modalFade.insertAdjacentElement('beforeend', modalDialog);
+        container.insertAdjacentElement('beforeend', buttonC);
+        container.insertAdjacentElement('beforeend', modalFade);
+        
+        configResult.insertAdjacentElement('beforeend', container);
+      })
+      .catch((error) => {
+        console.log(error.code, key);
+      });
+    }
+
+  }
+</script>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+</html>
